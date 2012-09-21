@@ -56,6 +56,21 @@ clear:right;
 float:right;
 border-radius:15px;
 }
+.content #main #left_side h3{
+margin: 0;
+margin-left:5px;
+margin-top:5px;
+}
+.content #main #left_side p{
+width:auto;
+margin-left:15px;
+}
+.content #main #left_side ul{
+list-style-type:none;
+}
+.content #footer{
+text-align:right;
+}
 /*
 JavaDoc css
 */
