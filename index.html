@@ -10,12 +10,17 @@ width : 35em;
 margin : 0 auto;
 font-family : Tahoma, Verdana, Arial, sans-serif;
 }
+a {
+    color: #000;
+    text-decoration: none;
+}
 .content {
 margin : 40px auto;
 border-radius : 15px;
 border : black solid 1px;
-width : 425px;
+width : 650px;
 min-height : 400px;
+    padding: 5px;
 }
 .header {
 background : #FFF;
@@ -23,121 +28,123 @@ color : #000;
 border-bottom : 1px solid #000;
 }
 .header a img {
-float : left;
-border-radius : 15px;
-margin-left : 10px;
-margin-right : 10px;
+    float : left;
+    border-radius : 80px;
+    margin-left : 10px;
+    margin-right : 10px;
+    margin-top : 10px;
 }
-.header h4, .header p {
-margin-right : 10px;
+.header h1, .header h2, .header h3, .header h4, .header h5, .header h6, .header p {
+    margin-right : 10px;
+    margin-top : 0px;
+    margin-bottom : 0px;
+    font-size : 14px;
 }
-.header h4 {
-margin-bottom : 0;
-font-size : 16px;
+.header h1 {
+    font-size : 22px;
 }
-.header p {
-font-size : 14px;
+.header h2 {
+    font-size: 18px;
 }
 .footer {
-border-top : 1px solid black;
-font-size : 12px;
-text-align : center;
-padding-top : 5px;
-padding-bottom : 5px;
+    clear:both;
+    border-top : 1px solid black;
+    font-size : 12px;
+    text-align : center;
+    padding-top : 5px;
+    padding-bottom : 5px;
 }
-.link {
-height : 50px;
-background : #000;
-font-size : 13px;
+.section h1 {
+    float:left;
+    margin : 0px;
+    clear:both;
 }
-.link.email {
-background-color : #f0f0eb;
-color : #312c2a;
+.section p, .section h2 {
+    float:right;
+    clear:both;
+    text-align:left;
+    margin : 0px;
 }
-.link.facebook {
-background-color : #4863ae;
+.section h1 {
+    font-size : 18px;
 }
-.link.github {
-background-color : #fbfbfb;
-color : #050505;
+.section h2 {
+    font-size : 16px;
 }
-.link.linkedin {
-background-color : #0083a8;
+.section p {
+    font-size : 14px;
 }
-.link.twitter {
-background-color : #46c0fb;
-}
-.link {
-border : #777 solid 1px;
-border-color : rgba(0, 0, 0, 0.2);
-border-bottom-color : #333;
-border-bottom-color : rgba(0, 0, 0, 0.4);
-color : #fff;
-box-shadow : 0 0.08em 0 rgba(255, 255, 255, 0.4) inset, 0 0 0.1em rgba(255, 255, 255, 0.9) inset;
-cursor : pointer;
-display : inline-block;
-font : bold 100%/2.1 "Lucida Grande", Tahoma, sans-serif;
-padding : 0 0.95em 0 0;
-text-align : center;
-text-decoration : none;
-text-shadow : 0 1px 0 rgba(0, 0, 0, 0.5);
-white-space : nowrap;
-position : relative;
-}
-.link:before {
-content : "";
-border-right : 0.075em solid rgba(0, 0, 0, 0.1);
-float : left;
-font : 120%/1.65 link;
-font-style : normal;
-font-weight : normal;
-margin : 0 0.5em 0 0;
-padding : 0 0.5em;
-text-align : center;
-text-decoration : none;
-text-transform : none;
-box-shadow : 0.075em 0 0 rgba(255, 255, 255, 0.25);
-}
-.link:active {
-outline : none;
-}
-.link {
-background-image : linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05) 49%, rgba(0, 0, 0, 0.05) 51%, rgba(0, 0, 0, 0.1));
-width : 408px;
-}
-.link:hover, .link:focus {
-background-image : linear-gradient(rgba(255, 255, 255, 0.15) 49%, rgba(0, 0, 0, 0.1) 51%, rgba(0, 0, 0, 0.15));
-}
-.link.email, .link.github {
-border : #aaa solid 1px;
-border-color : rgba(0, 0, 0, 0.3);
-border-bottom-color : #777;
-border-bottom-color : rgba(0, 0, 0, 0.5);
-box-shadow : 0 0.08em 0 rgba(255, 255, 255, 0.7) inset, 0 0 0.08em rgba(255, 255, 255, 0.5) inset;
-text-shadow : 0 1px 0 rgba(255, 255, 255, 0.8);
-}
-.link span {
-display : block;
-padding-top : 8px;
-}
-
+</style>
+<style media="print">
+    body {
+    margin : 0 0 auto;
+    }
+    .content {
+    margin : 0 0 auto;
+    border : none;
+    }
+    .footer {
+    display:none;
+    }
 </style>
 </head>
 <body>
 <div class="content">
 <div class="header"> <a href="http://gravatar.com/avatar/b789e2fd4a20d14885e2f92424368189.jpg?s=354"><img src="http://gravatar.com/avatar/b789e2fd4a20d14885e2f92424368189.jpg?s=100" alt="" /></a>
-  <h4>
-    Hi, my name is <strong>James C Kimble Jr</strong>.
-  </h4>
-  <p>
-    I'm a freelance software developer available for contract work. My primary focus is currently android applications. I support Open Source Projects.
-  </p></div>
-<div><a class="link email" href="mailto:james@jckimble.com"><span>Email: <strong>james@jckimble.com</strong></span></a></div>
-<div><a  class="link twitter" href="http://twitter.com/jckimble601"><span>Twitter: <strong>@jckimble601</strong></span></a></div>
-<div><a  class="link github" href="http://github.com/jckimble"><span>GitHub: <strong>jckimble</strong></span></a></div>
-<div><a class="link facebook" href="https://www.facebook.com/jckimble601"><span>FaceBook: <strong>jckimble601</strong></span></a></div>
-<div><a class="link linkedin" href="http://lnkd.in/5gjsKi"><span>LinkedIn: <strong>jckimble</strong></span></a></div>
-<div class="footer">2013 &copy; James C Kimble Jr - <a href="http://validator.w3.org/check?uri=referer" title="Validate">Xhtml</a> - <a href="http://jigsaw.w3.org/css-validator/check/referer" title="Validate">CSS</a>
+   <h1>James C Kimble Jr</h1>
+   <h2>Software Developer</h2>
+   <h3><a href="mailto:jckimble601@gmail.com"><span>Email: <strong>jckimble601@gmail.com</strong></span></a></h3>
+   <h4><a href="http://lnkd.in/5gjsKi"><span>LinkedIn: <strong>jckimble</strong></span></a></h4>
+   <h5><a href="http://github.com/jckimble"><span>GitHub: <strong>jckimble</strong></span></a></h5>
+   <h6><a href="http://jckimble.github.io"><span>Web: <strong>http://jckimble.github.io</strong></span></a></h6>
+</div>
+    <div class="section">
+        <h1>About</h1>
+        <p>I'm a freelance software developer available for contract work. My primary focus is currently android applications. I support Open Source Projects.</p>
+    </div>
+    <div class="section">
+        <h1>Open-Source Projects</h1>
+        <h2>mkinitcpio-autofsck</h2>
+        <p>A plugin made for ArchLinux. Automatically fixes hard drive on corruption due to power failure. </p>
+        <h2>JSONTCPLoadTest</h2>
+        <p>A benchmarking program like siege. Used to benchmark json apis.</p>
+        <h2>JSONProtocol</h2>
+        <p>A java library to implement a json api server or client.</p>
+        <h2>AdsLicenseChecker</h2>
+        <p>An android library to implement a licencing check with an option to display ads or close if check fails.</p>
+    </div>
+    <div class="section">
+        <h1>Technologies</h1>
+        <h2>Languages</h2>
+        <p>Java, HTML, JavaScript, XML, XSL, CSS, SQL, C, C++, Regex/Regular Expressions</p>
+        <h2>Frameworks</h2>
+        <p>Android, JQuery</p>
+        <h2>App Servers</h2>
+        <p>Tomcat</p>
+        <h2>Databases</h2>
+        <p>MySQL, SQLite</p>
+        <h2>ORM</h2>
+        <p>Hibernate</p>
+        <h2>IDE</h2>
+        <p>Intellij IDEA, Netbeans, Eclipse</p>
+        <h2>Tools</h2>
+        <p>grep, vi, nano, git</p>
+        <h2>Design</h2>
+        <p>Design Patterns, Multi-threading, User Experience</p>
+        <h2>OS</h2>
+        <p>Linux, Windows NT 2000/95/98/XP/7/2008</p>
+        <h2>Java Tech.</h2>
+        <p>JDBC, java.net, java.nio, java.util.concurrent, Log4j</p>
+        <h2>Protocols</h2>
+        <p>TCP/IP, UDP, FTP, HTTP</p>
+        <h2>Build Tools</h2>
+        <p>Make, Ant, Maven</p>
+    </div>
+    <div class="section">
+        <h1>Languages</h1>
+        <p>English</p>
+    </div>
+<div class="footer">2014 &copy; James C Kimble Jr - <a href="http://validator.w3.org/check?uri=referer" title="Validate">Xhtml</a> - <a href="http://jigsaw.w3.org/css-validator/check/referer" title="Validate">CSS</a>
 </div>
 </div>
 </body>
