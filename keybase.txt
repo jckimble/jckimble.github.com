@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/jckimble
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://jckimble.github.io
+  * I am jckimble (https://keybase.io/jckimble) on keybase.
+  * I have a public key with fingerprint FE7D FB8D CF95 C3C0 ED4F  7CB7 69CA E07E AFB1 BC4B
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01015245d63935ece2f3e523af6a79c46d1340a6186726ed794da6d82454fb871a6d0a",
+            "fingerprint": "fe7dfb8dcf95c3c0ed4f7cb769cae07eafb1bc4b",
+            "host": "keybase.io",
+            "key_id": "69cae07eafb1bc4b",
+            "kid": "01015245d63935ece2f3e523af6a79c46d1340a6186726ed794da6d82454fb871a6d0a",
+            "uid": "3f92e628f5ad138edd34a2d56f7e7119",
+            "username": "jckimble"
+        },
+        "service": {
+            "hostname": "jckimble.github.io",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1481020526,
+    "expire_in": 157680000,
+    "prev": "827e2889cd6f2541b41f9ebf1072d7cdd3e520a008ecfe8fc006a57270768d6e",
+    "seqno": 24,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.58
+Comment: https://keybase.io/crypto
+
+yMNCAnicrVJtUFRVGN5dUJEGYihpzMKZK9YYtNx7937tOm4IDeMoLDYDJgGu9+Nc
+9i6wd9m9iyGiaY3WJAtKWGhfJhYhEI4sU+lQCzijUDSa8SEDJQtBLDXhgA6g2blU
+f5p+dv6cOe/7PM95nnferogQTbg2O+Q97uLR6q3aHv/7Hs3O1LccZQgnC6WIqQwp
+AEsXKBSAW7EWSAJiQlAMxUicIAXKYDSQgAe4aAAkbmBFiqWNPEEJmIFAWQpjKBqn
+gEAbCYGlBAZSCJFjaAw+UBZJQETJkQ9cTpfkUKCsCGgBtgVeNJK8gUeBQIg0z9GU
+kWcBSgNW5DCOJzhItMlulQHNcawb6CUZ1uDDumTvP/D/s2/PkpxBNOKAwhmRZCGR
+AYJgIFhcICmRBjSGGVWgG7gcbBGAaDtfIBVxhQApT0BgtUTigTpYNcm/EPp8SbF5
+uL9SOV2yIvNyIezbFMXpNql8pdSpEvYAzvq3lJWTHAKcJmSUAJdbkh2ICYNIXpFU
+bYxgMBRHSZxKQMDLTskFrJKKIGmKQeFR/wElUJLBaYAzjJEXKBEnCYwjMNEIOBFD
+aVygeRgRDgxlUZQBvAgYkUdRiiVpnEahkkABRA1X7JARE05An2w+1HRL+Q5W8bhg
+9A5/bqhGG65ZvkynrpkmfGXUP8u3GP/wg5dWFSfUrBsT89zDv/ZFR67fcDDTdT/3
+XliTZfvJFcojp5JtrZ9t3PaHdz7lfFlwxhm0XFnfOfuqzx12pBoN3ATc5S3DzfUP
+nRlvaLSkDm66ayYGkq/qUyvfOR2o6Kiwss/5Mr/+fGWT/kbOrQwQHNFttRwpn1zo
+Xoy2fZC+8+5M2t7t9oldH83feobb0dLYv/uNnOYp+8Klb/YPXsOz3o01a55+1mv3
+x3TUl0zqvVLl0Oy1qDtnK/T+0Ks/BnZXJymYmHH4y/yF8qkV/XHXif1xq8dzEg0Z
+x19oXhYfbK3LXjNeLgWGRrp+kNJ6pgMN+tdObHjlthCBTqT9lNvu7r2NdX94fzQG
+t46d+Fib/MWncmRu0cXJzFrdV96UtPl7cYdoW42ZS32Kfd3efam9N5gTW3U45JML
++0Za+yr5kylvD8yN0du6RjyZnZtr+mZfrPlt+Pt5rMl3LrkWHXqyf1GUmxtRzDqD
+XHAN1J0+9l3io48PdB1MjPqZ6Gtpb6X8tfLGNu2otEfXa+lc121ui92kS5or9mU/
++P38Xt56p3XzL55Yc1jEvhttVTd7jlcfqn8sdMeEr6pddyVp7eo113tz0/mYoYHS
+osGYVd9OHeiQSt+cHo0MSWLTT12ODm04VzU3aMtrid9i31XwxPK106bRrIy6vDMR
+MQdSNEdt2Wef7+dDF7O8fwLAfM0F
+=8O9k
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jckimble
+
+==================================================================
+
