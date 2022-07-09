@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CreateFileWebpack = require('create-file-webpack')
 const path=require('path')
 module.exports = (env)=>{
     return {
@@ -13,6 +14,11 @@ module.exports = (env)=>{
             port: 3000
         },
         plugins: [
+            new CreateFileWebpack({
+                path: "./public",
+                fileName: 'CNAME',
+                content: "jckimble.com",
+            }),
             new MiniCssExtractPlugin(),
             new HtmlWebpackPlugin({
                 template: "src/index.pug",
