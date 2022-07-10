@@ -13,15 +13,15 @@ const vcfToData=(text)=>{
 const generateVCF=(vcfData)=>{
     let content={
         "BEGIN":"VCARD",
-        "VERSION":"4.0",
+        "VERSION":"2.1",
         "N":[vcfData.familyName,vcfData.givenName,"","",""],
         "FN":vcfData.name,
-        "TEL":vcfData.phone,
-        "EMAIL":vcfData.email,
+        "TEL;WORK":vcfData.phone,
+        "EMAIL;WORK":vcfData.email,
         "TITLE":vcfData.title,
         "URL":vcfData.url,
         "NOTE":vcfData.description,
-        "PHOTO;MEDIATYPE=image/jpeg":vcfData.photo,
+        "PHOTO;JPEG":vcfData.photo,
         "END":"VCARD"
     }
     return Object.entries(content).map(([k,v])=>{
