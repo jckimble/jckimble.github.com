@@ -14,7 +14,7 @@ const generateVCF=(vcfData)=>{
     let content={
         "BEGIN":"VCARD",
         "VERSION":"2.1",
-        "N":[vcfData.familyName,vcfData.givenName,"","",""],
+        "N":[vcfData.familyName,vcfData.givenName,vcfData.middleName,vcfData.prefixName,vcfData.suffixName].join(";"),
         "FN":vcfData.name,
         "TEL;WORK":vcfData.phone,
         "EMAIL;WORK":vcfData.email,
@@ -24,34 +24,31 @@ const generateVCF=(vcfData)=>{
         "PHOTO;JPEG":vcfData.photo,
         "END":"VCARD"
     }
-    return Object.entries(content).map(([k,v])=>{
-                if(typeof v === 'string'){
-                    return k+":"+v
-                }else{
-                    return k+":"+v.join(";")
-                }
-            }).join("\n")
+    return Object.entries(content).map(([k,v])=>k+":"+v).join("\n")
 }
 
 const generateJSONLD=(data)=>{
     const jsonld={
         "@context": "https://schema.org",
-        "@type": "Person",
+        "@type": "Organization",
 		"url": data.url,
 	    "name": data.name,
-        "givenName":data.givenName,
-        "familyName":data.familyName,
+		"logo": data.photo,
 		"image": data.photo,
         "email": data.email,
         "telephone": data.phone,
         "jobTitle": data.title,
-		"contactPoint": [
-		    {
-			    "@type": "ContactPoint",
-			    "email": data.email,
-                "telephone": data.phone
-			}
-		],
+        "address":{
+            "addressCountry": "USA",
+            "postalCode": "39601",
+            "addressRegion": "MS",
+            "addressLocality": "Brookhaven",
+        },
+		"contactPoint": {
+		    "@type": "ContactPoint",
+		    "email": data.email,
+            "telephone": data.phone
+		},
 		"description": data.description,
 		"sameAs": [
 		    data.github,
@@ -66,7 +63,6 @@ const generateJSONLD=(data)=>{
     document.head.appendChild(script);    
 }
     
-//data.givenName,data.familyName,data.phone,data.email
 const getVCardData=()=>{
     let data={}
     const vcardData=document.querySelectorAll('[data-vcard]');
@@ -74,12 +70,12 @@ const getVCardData=()=>{
         let name=item.getAttribute("data-vcard")
         switch(item.tagName){
             case "A":
-                if(name!="email" && name!="phone"){
-                    data[name]=item.getAttribute("href")
-                }else{
-                    let str=item.getAttribute("href")
-                    data[name]=str.substring(str.indexOf(':') + 1)
+                let href=item.getAttribute("href")
+                if(href.startsWith("mailto:") || href.startsWith("tel:")){
+                    data[name]=href.substring(href.indexOf(':') + 1)
+                    return
                 }
+                data[name]=href
                 break;
             case "IMG":
                 data[name]=item.getAttribute("src")
