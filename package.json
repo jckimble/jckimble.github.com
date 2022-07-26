@@ -8,7 +8,7 @@
   },
   "author": "",
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.1.1",
+    "@fortawesome/fontawesome-free": "^6.1.2",
     "meta-data-vcard": "^1.0.0",
     "qrcode": "^1.5.1"
   },
