@@ -1,11 +1,24 @@
 import React, { useState } from 'react';
+import { HeadFC } from "gatsby"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {QRCodeSVG} from 'qrcode.react';
+
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+library.add(fab, fas)
+
+import '../index.scss';
 
 function Home() {
   const [data,setData]=useState("");
   fetch("/jckimble.vcf").then(data=>data.text()).then(data=>setData(data)).catch(console.log)
   return <>
+  <div className="lines">
+    <div className="line"></div>
+    <div className="line"></div>
+    <div className="line"></div>
+  </div>
   <main className='profile'>
     <header>
       <ul className='profile-vcf'>
@@ -61,3 +74,5 @@ function Home() {
 }
 
 export default Home;
+
+export const Head: HeadFC = () => <title>James C Kimble :: Software Consultant</title>
