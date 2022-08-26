@@ -5,6 +5,8 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 library.add(fas)
 
+import '../index.scss';
+
 const NotFoundPage = () => {
   return (<>
     <div className="lines">
