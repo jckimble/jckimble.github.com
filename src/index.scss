@@ -4,6 +4,7 @@
 }
 
 html,body {
+  display: flex;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -11,7 +12,6 @@ html,body {
 }
 
 body {
-  display: flex;
   position: relative;
   background: #063352 radial-gradient(circle,#063352 0%, #091419 75%, #091419 100%);
   color: #ecf0f1;
