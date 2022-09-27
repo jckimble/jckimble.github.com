@@ -6,7 +6,7 @@ const config: GatsbyConfig = {
     siteUrl: `https://jckimble.com`,
   },
   graphqlTypegen: false,
-  plugins: ['gatsby-plugin-sass'],
+  plugins: ["gatsby-plugin-sass"],
 }
 
 export default config
