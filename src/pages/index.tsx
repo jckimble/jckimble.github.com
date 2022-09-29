@@ -1,22 +1,13 @@
 import React from "react"
 import { HeadFC } from "gatsby"
+import { OutboundLink } from "gatsby-plugin-google-gtag"
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-
-import { library } from "@fortawesome/fontawesome-svg-core"
-import { fab } from "@fortawesome/free-brands-svg-icons"
-import { fas } from "@fortawesome/free-solid-svg-icons"
-library.add(fab, fas)
-
-import "../index.scss"
+import Layout from "../components/layout"
 
 function Home() {
   return (
-    <>
-      <div className="lines">
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
-      </div>
+    <Layout>
       <main className="profile">
         <header>
           <ul className="profile-vcf">
@@ -57,22 +48,28 @@ function Home() {
         </header>
         <ul className="profile-social-links">
           <li>
-            <a href="https://twitter.com/jckimble601" data-tooltip="Twitter">
+            <OutboundLink
+              href="https://twitter.com/jckimble601"
+              data-tooltip="Twitter"
+            >
               <FontAwesomeIcon icon={["fab", "twitter"]} />
-            </a>
+            </OutboundLink>
           </li>
           <li>
-            <a
+            <OutboundLink
               href="https://www.linkedin.com/in/james-kimble-865092212/"
               data-tooltip="LinkedIn"
             >
               <FontAwesomeIcon icon={["fab", "linkedin-in"]} />
-            </a>
+            </OutboundLink>
           </li>
           <li>
-            <a href="https://github.com/jckimble" data-tooltip="GitHub">
+            <OutboundLink
+              href="https://github.com/jckimble"
+              data-tooltip="GitHub"
+            >
               <FontAwesomeIcon icon={["fab", "github"]} />
-            </a>
+            </OutboundLink>
           </li>
           <li>
             <a href="mailto:me@jckimble.com" data-tooltip="Email">
@@ -89,7 +86,7 @@ function Home() {
       <a href="#" className="lightbox" id="qrcode">
         <img src="./qr-code.svg" height={500} />
       </a>
-    </>
+    </Layout>
   )
 }
 

@@ -1,20 +1,11 @@
 import * as React from "react"
 import { Link, HeadFC } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { library } from "@fortawesome/fontawesome-svg-core"
-import { fas } from "@fortawesome/free-solid-svg-icons"
-library.add(fas)
-
-import "../index.scss"
+import Layout from "../components/layout"
 
 const NotFoundPage = () => {
   return (
-    <>
-      <div className="lines">
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
-      </div>
+    <Layout>
       <aside className="error profile">
         <header>
           <FontAwesomeIcon icon={["fas", "exclamation-triangle"]} />
@@ -26,7 +17,7 @@ const NotFoundPage = () => {
           </p>
         </header>
       </aside>
-    </>
+    </Layout>
   )
 }
 

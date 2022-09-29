@@ -90,6 +90,49 @@ body {
   }
 }
 
+.blog {
+  background: rgba(255, 255, 255, 0.85);
+  color: #0a0a0a;
+  width: 800px;
+  padding: 2.5rem 1.25rem;
+  margin-top: 10px;
+  border-radius: 15px;
+}
+
+.blog header h1 {
+  font-size: 36px;
+}
+
+.blog header h2 {
+  font-size: 18px;
+}
+
+.blog header h2 a {
+  text-decoration: none;
+  color: #0a0a0a;
+}
+
+.blog header h3 {
+  font-size: 16px;
+}
+
+.blog header small {
+  font-size: 12px;
+}
+.blog header {
+  padding-bottom: 5px;
+}
+.blog section {
+  font-size: 14px;
+}
+
+.comments,
+.blog section {
+  border-top: 1px solid #aaa;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
 .error {
   text-align: center;
   .fa-triangle-exclamation {
