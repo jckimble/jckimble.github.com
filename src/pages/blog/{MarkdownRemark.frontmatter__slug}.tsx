@@ -5,7 +5,7 @@ import config from "../../../gatsby-config"
 import { Disqus } from "gatsby-plugin-disqus"
 import Layout from "../../components/layout"
 
-export default function Post({ data }: { data: any }) {
+export default function Post({ location, data }: { location: any; data: any }) {
   const rtf1 = new Intl.RelativeTimeFormat("en", { style: "narrow" })
   const { markdownRemark: post } = data
   let disqusConfig = {
