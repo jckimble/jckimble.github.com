@@ -1,7 +1,6 @@
 import React from "react"
-import { HeadFC, Link } from "gatsby"
-import { OutboundLink } from "gatsby-plugin-google-gtag"
-
+import { HeadFC } from "gatsby"
+import Link from "../components/link"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Layout from "../components/layout"
 
@@ -17,13 +16,13 @@ function Home() {
               </Link>
             </li>
             <li>
-              <a
-                href="/jckimble.vcf"
+              <Link
+                to="/jckimble.vcf"
                 download="jckimble.vcf"
                 data-tooltip="vCard"
               >
                 <FontAwesomeIcon icon={["fas", "address-card"]} />
-              </a>
+              </Link>
             </li>
           </ul>
           <img src="/qr-code.svg" height={500} />
@@ -31,28 +30,22 @@ function Home() {
         <footer>
           <ul>
             <li>
-              <OutboundLink
-                href="https://twitter.com/jckimble601"
-                data-tooltip="Twitter"
-              >
+              <Link to="https://twitter.com/jckimble601" data-tooltip="Twitter">
                 <FontAwesomeIcon icon={["fab", "twitter"]} />
-              </OutboundLink>
+              </Link>
             </li>
             <li>
-              <OutboundLink
-                href="https://www.linkedin.com/in/james-kimble-865092212/"
+              <Link
+                to="https://www.linkedin.com/in/james-kimble-865092212/"
                 data-tooltip="LinkedIn"
               >
                 <FontAwesomeIcon icon={["fab", "linkedin-in"]} />
-              </OutboundLink>
+              </Link>
             </li>
             <li>
-              <OutboundLink
-                href="https://github.com/jckimble"
-                data-tooltip="GitHub"
-              >
+              <Link to="https://github.com/jckimble" data-tooltip="GitHub">
                 <FontAwesomeIcon icon={["fab", "github"]} />
-              </OutboundLink>
+              </Link>
             </li>
             <li>
               <Link to="/blog" data-tooltip="Blog">
@@ -60,14 +53,14 @@ function Home() {
               </Link>
             </li>
             <li>
-              <a href="mailto:me@jckimble.com" data-tooltip="Email">
+              <Link to="mailto:me@jckimble.com" data-tooltip="Email">
                 <FontAwesomeIcon icon={["fas", "envelope"]} />
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="tel:+16017484093" data-tooltip="Phone">
+              <Link to="tel:+16017484093" data-tooltip="Phone">
                 <FontAwesomeIcon icon={["fas", "phone"]} />
-              </a>
+              </Link>
             </li>
           </ul>
         </footer>

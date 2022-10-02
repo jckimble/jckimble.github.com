@@ -3,7 +3,7 @@ import { HeadFC } from "gatsby"
 import { graphql } from "gatsby"
 import config from "../../../gatsby-config"
 import { Disqus } from "gatsby-plugin-disqus"
-import { OutboundLink } from "gatsby-plugin-google-gtag"
+import Link from "../../components/link"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Layout from "../../components/layout"
@@ -22,56 +22,50 @@ export default function Post({ location, data }: { location: any; data: any }) {
         <header>
           <ul>
             <li>
-              <a
-                href="/jckimble.vcf"
+              <Link
+                to="/jckimble.vcf"
                 download="jckimble.vcf"
                 data-tooltip="vCard"
               >
                 <FontAwesomeIcon icon={["fas", "address-card"]} />
-              </a>
+              </Link>
             </li>
             <li>
-              <OutboundLink
-                href="https://twitter.com/jckimble601"
-                data-tooltip="Twitter"
-              >
+              <Link to="https://twitter.com/jckimble601" data-tooltip="Twitter">
                 <FontAwesomeIcon icon={["fab", "twitter"]} />
-              </OutboundLink>
+              </Link>
             </li>
             <li>
-              <OutboundLink
-                href="https://www.linkedin.com/in/james-kimble-865092212/"
+              <Link
+                to="https://www.linkedin.com/in/james-kimble-865092212/"
                 data-tooltip="LinkedIn"
               >
                 <FontAwesomeIcon icon={["fab", "linkedin-in"]} />
-              </OutboundLink>
+              </Link>
             </li>
             <li>
-              <OutboundLink
-                href="https://github.com/jckimble"
-                data-tooltip="GitHub"
-              >
+              <Link to="https://github.com/jckimble" data-tooltip="GitHub">
                 <FontAwesomeIcon icon={["fab", "github"]} />
-              </OutboundLink>
+              </Link>
             </li>
             <li>
-              <a href="mailto:me@jckimble.com" data-tooltip="Email">
+              <Link to="mailto:me@jckimble.com" data-tooltip="Email">
                 <FontAwesomeIcon icon={["fas", "envelope"]} />
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="tel:+16017484093" data-tooltip="Phone">
+              <Link to="tel:+16017484093" data-tooltip="Phone">
                 <FontAwesomeIcon icon={["fas", "phone"]} />
-              </a>
+              </Link>
             </li>
           </ul>
-          <a className="profile-img" href="https://jckimble.com/">
+          <Link className="profile-img" to="/">
             <img
               src="https://0.gravatar.com/avatar/43799da335050c4cebcc859ef15dd939?s=150"
               alt="James C Kimble"
               data-vcard="photo"
             />
-          </a>
+          </Link>
           <h1>James C Kimble</h1>
           <h2>Software Consultant</h2>
         </header>
