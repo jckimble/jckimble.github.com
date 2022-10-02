@@ -73,7 +73,7 @@ function Home() {
               </OutboundLink>
             </li>
             <li>
-              <Link to="blog" data-tooltip="Blog">
+              <Link to="/blog" data-tooltip="Blog">
                 <FontAwesomeIcon icon={["fas", "blog"]} />
               </Link>
             </li>

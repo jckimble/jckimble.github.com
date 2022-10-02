@@ -26,7 +26,7 @@ function Home() {
               </a>
             </li>
           </ul>
-          <img src="./qr-code.svg" height={500} />
+          <img src="/qr-code.svg" height={500} />
         </header>
         <footer>
           <ul>
@@ -55,7 +55,7 @@ function Home() {
               </OutboundLink>
             </li>
             <li>
-              <Link to="blog" data-tooltip="Blog">
+              <Link to="/blog" data-tooltip="Blog">
                 <FontAwesomeIcon icon={["fas", "blog"]} />
               </Link>
             </li>
