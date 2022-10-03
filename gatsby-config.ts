@@ -41,6 +41,7 @@ const config: GatsbyConfig = {
     },
     "gatsby-plugin-sass",
     "gatsby-plugin-sitemap",
+    "gatsby-plugin-robots-txt",
   ],
 }
 

@@ -35,6 +35,7 @@ export default function Link({
 }: {
   children: ReactNode
   to: string
+  download?: string
   className?: string
 }) {
   const { to, ...rest } = props
