@@ -97,7 +97,7 @@ body {
   }
 }
 
-main.blog {
+main.page {
   width: 800px;
 }
 main {
@@ -210,8 +210,10 @@ main {
         .fa-github {
           color: #4078c0;
         }
+        .fa-dev {
+          color: #fff;
+        }
         .fa-envelope,
-        .fa-blog,
         .fa-phone {
           color: #aaa;
         }

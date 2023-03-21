@@ -7,31 +7,6 @@ const config: GatsbyConfig = {
   },
   plugins: [
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `posts`,
-        path: __dirname + "/src/posts",
-      },
-    },
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          "gatsby-remark-prismjs",
-          "gatsby-remark-autolink-headers",
-          "gatsby-remark-images",
-          "gatsby-remark-external-links",
-          "gatsby-remark-embedder",
-        ],
-      },
-    },
-    {
-      resolve: `gatsby-plugin-disqus`,
-      options: {
-        shortname: `jckimble-1`,
-      },
-    },
-    {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
         trackingIds: ["G-HPCFMK48KC"],

@@ -66,8 +66,8 @@ function Home() {
               </Link>
             </li>
             <li>
-              <Link to="/blog" data-tooltip="Blog">
-                <FontAwesomeIcon icon={["fas", "blog"]} />
+              <Link to="https://dev.to/jckimble" data-tooltip="Dev.to">
+                <FontAwesomeIcon icon={["fab", "dev"]} />
               </Link>
             </li>
             <li>
