@@ -7,7 +7,7 @@
     "@fortawesome/free-brands-svg-icons": "^6.5.1",
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
-    "@types/react": "^18.2.46",
+    "@types/react": "^18.2.51",
     "react": "^18.2.0",
     "typescript": "^5.3.3"
   },
