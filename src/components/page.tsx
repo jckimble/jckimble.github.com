@@ -42,11 +42,6 @@ function Page({ data, children }: { data: any; children: ReactNode }) {
                 <FontAwesomeIcon icon={["fas", "envelope"]} />
               </Link>
             </li>
-            <li>
-              <Link to="tel:+16017484093" data-tooltip="Phone">
-                <FontAwesomeIcon icon={["fas", "phone"]} />
-              </Link>
-            </li>
           </ul>
           <Link className="profile-img" to="/">
             <img

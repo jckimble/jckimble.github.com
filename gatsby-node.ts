@@ -16,7 +16,6 @@ export const onPostBuild = async ({ reporter }) => {
   vCard.lastName = "Kimble"
   vCard.title = "Software Consultant"
   vCard.email = "me@jckimble.com"
-  vCard.workPhone = "+16017484093"
   vCard.url = "https://jckimble.com"
   vCard.source = "https://jckimble.com/jckimble.vcf"
   vCard.socialUrls["linkedIn"] =

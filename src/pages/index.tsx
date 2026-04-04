@@ -341,12 +341,6 @@ function Home() {
                   </div>
                   me@jckimble.com
                 </Link>
-                <Link to="tel:+16017484093">
-                  <div className="contact-icon">
-                    <FontAwesomeIcon icon={["fas", "phone"]} />
-                  </div>
-                  +1 (601) 748-4093
-                </Link>
               </div>
             </div>
             <div className="contact-socials">
